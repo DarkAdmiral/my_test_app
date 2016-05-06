@@ -1,0 +1,23 @@
+.nav {
+  padding-top: 5px;
+  padding-right: 20px;
+}
+
+.nav-pills a {
+  color: black;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+  background-color: #B13E3C;
+}
+
+.navbar {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+@media (min-width: 768px) {
+      .navbar-right {
+      margin-right: 0px;
+   }
+}

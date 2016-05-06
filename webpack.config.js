@@ -3,10 +3,10 @@ var webpack = require('webpack');
 
 module.exports = {
     content: __dirname,
-    entry: "./app/src/js/app.jsx",
+    entry: "./app/src/app.jsx",
     output: {
         path: __dirname + "/",
-        publicPath: './assets/',
+        publicPath: '/',
         filename: "./app/bundle.js"
     },
     resolve: {
@@ -26,6 +26,14 @@ module.exports = {
                     presets: ['es2015', 'react']
                 }
             },
+            {
+                test: /\.scss$/,
+                loaders: ['style', 'css', 'sass']
+            },
+            {
+                test: /\.(png|jpg)$/,
+                loaders: ['file-loader']
+            }
         ]
     }
 }
