@@ -13,7 +13,7 @@ class Content_1 extends React.Component {
       return (
          <div className="content-1-box">
             <div className="left-box">
-               <img src={'./resources/images/keyboard.jpg'}/>
+               <img src={'./resources/images/keyboard_001.jpg'}/>
             </div>
             <div className="right-box">
                <h2>Why ReactJS</h2>
