@@ -6,7 +6,7 @@ class Jumbotron extends React.Component {
       return (
          <div className="jumbotron">
             <h1>feuersturm.eu</h1>
-            <p></p>
+            <p>start your business now</p>
             {/*<p><a className="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>*/}
          </div>
       )

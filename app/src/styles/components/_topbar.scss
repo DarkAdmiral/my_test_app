@@ -1,0 +1,23 @@
+.topbar {
+  background-color: #333030;
+  height: 30px;
+  
+  .contact {
+    color: white;
+    padding-top: 4px;
+  }
+  
+  .navbar-header.brand {
+    float: right;
+  }
+  
+  .navbar-brand {
+    float: right;
+    padding-top: 6px;
+    padding-left: 0px;
+    
+    img {
+      height: 15px;
+    }
+  }
+}

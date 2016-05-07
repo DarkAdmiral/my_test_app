@@ -8,14 +8,13 @@ class NavBar extends React.Component {
          <div className="navbar">
             <ul className="nav nav-pills navbar-right">
                <li role="presentation" className="active"><a href="#">Home</a></li>
-               <li role="presentation"><a href="#">Profile</a></li>
-               <li role="presentation"><a href="#">Messages</a></li>
+               <li role="presentation"><a href="#">Gallery</a></li>
+               <li role="presentation"><a href="#">Pricing</a></li>
+               <li role="presentation"><a href="#">Impressum</a></li>
             </ul>
          </div>
       )
    }
-
-
 }
 
 export default NavBar;

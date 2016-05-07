@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-class Content extends React.Component {
+class Content_2 extends React.Component {
    constructor(props) {
       super(props);
       this.state = {
@@ -11,10 +11,10 @@ class Content extends React.Component {
    render() {
       var { name } = this.props;
       return (
-         <div className="main-box">
-            <h2>Hello {this.props.name}!</h2>
+         <div className="content-2-box">
+            {/*<h2>Hello {this.props.name}!</h2>
             <h4>You are {this.state.age}!</h4>
-            <button onClick={this.okButton.bind(this) }>OK</button>
+            <button onClick={this.okButton.bind(this) }>OK</button> */}
          </div>
       )
    }
@@ -23,4 +23,4 @@ class Content extends React.Component {
    }
 }
 
-export default Content;
+export default Content_2;
