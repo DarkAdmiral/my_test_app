@@ -1,21 +1,27 @@
+
+
 .left-box {
    float: left;
-   width: 50%;
+   width: 40%;
    padding-left: 20px;
    
    img {
-      padding-top: 20px;
+         max-width: 100%;
+      // padding-top: 20px;
+      // padding-right: 40px;
+      // float: right;
    }
 }
    
 .right-box {
    float: right;
-   width: 50%;
+   width: 40%;
    padding-right: 20px;
    
-   img {
-      padding-top: 20px;
-   }
+//    img {
+//       padding-top: 20px;
+//       padding-right: 20px;
+//    }
 }
 
 .right-img {
@@ -27,7 +33,10 @@
 }
 
 .content-1-box {
-   height: 500px; 
+   width: 750px;
+   height: 500px;
+   margin-right: auto;
+   margin-left: auto;
 }
 
 .content-2-box {

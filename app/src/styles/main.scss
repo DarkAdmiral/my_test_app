@@ -4,6 +4,10 @@
 @import 'components/topbar';
 @import 'components/content';
 
+.panel-default {
+   padding-top: 50px;
+}
+
 .panel-body {
    padding: 0px;
 }
