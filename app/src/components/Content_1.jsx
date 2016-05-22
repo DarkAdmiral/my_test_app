@@ -11,19 +11,21 @@ class Content_1 extends React.Component {
    render() {
       var { name } = this.props;
       return (
-         <div className="content-1-box">
-            <div className="row-box">
-               <div className="left-box">
-                  <img src={'./resources/images/keyboard_001.jpg'}/>
-               </div>
-               <div className="right-box">
-                  <h2>Why ReactJS</h2>
-                  <h3>Component based, easy, state of the art</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum nulla pariatur.</p>
-               </div>
-               {/*<h2>Hello {this.props.name}!</h2>
+         <div id="content_1">
+            <div className="container">
+               <div className="row">
+                  <div className="left-box">
+                     <img src={'./resources/images/brand_003.png'}/>
+                  </div>
+                  <div className="right-box">
+                     <h2>Why ReactJS</h2>
+                     <h3>Component based, easy, state of the art</h3>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum nulla pariatur.</p>
+                  </div>
+                  {/*<h2>Hello {this.props.name}!</h2>
             <h4>You are {this.state.age}!</h4>
             <button onClick={this.okButton.bind(this) }>OK</button> */}
+               </div>
             </div>
          </div>
       )

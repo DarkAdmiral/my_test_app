@@ -4,24 +4,21 @@ import NavBar from './NavBar';
 import JumboTron from './JumboTron';
 import Content_1 from './Content_1';
 import Content_2 from './Content_2';
+import Content_3 from './Content_3';
 import Footer from './Footer';
 import TopBar from './TopBar';
 
 class MainFrame extends React.Component {
    render() {
-      var { name } = this.props;
       return (
-         <div className="mainFrame">
+         <div id="mainFrame">
             <TopBar />
             <NavBar />
             <div className="panel panel-default">
-               <div className="panel-body">
-                  <JumboTron />
-                  {/* <Content name="Jan"/> */}
-               </div>
-
+               <JumboTron />
                <Content_1/>
                <Content_2/>
+               <Content_3/>
                <Footer/>
             </div>
 
