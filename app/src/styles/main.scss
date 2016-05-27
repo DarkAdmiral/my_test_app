@@ -10,11 +10,9 @@ $jumbotron_height: 500px;
 @import 'components/jumbotron';
 @import 'components/navbar';
 @import 'components/topbar';
-@import 'components/content';
-
-.panel-default {
-   padding-top: 50px;
-}
+@import 'components/content_1';
+@import 'components/content_2';
+@import 'components/twitter-feed';
 
 .panel-body {
    padding: 0px;

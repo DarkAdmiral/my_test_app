@@ -1,3 +1,19 @@
+@media (max-width: 325px) {
+   .jumbotron {
+      height: 300px;
+      .btn-primary {
+         width: 90%;
+         margin: 5px;
+      }
+   }
+}
+
+@media (min-width: 500px) {
+   .jumbotron {
+      height: 500px;
+   }
+}
+
 .jumbotron {
    background-image: url('../../resources/images/jumbo_001.jpg');
    background-size: cover;
@@ -5,9 +21,9 @@
    background-position: center center;
    padding-left: 10px;
    color: white;
-   height: $jumbotron_height;
+   // height: $jumbotron_height;
    text-align: center;
-   
+
    .btn-primary {
       background: transparent;
       border-color: $color_3;
@@ -18,7 +34,7 @@
       &:active {
          background: transparent;
          border-color: $color_4;
-      }      
+      }
       &:hover {
          color: $color_3;
       }

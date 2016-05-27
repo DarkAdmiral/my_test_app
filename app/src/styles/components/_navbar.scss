@@ -1,32 +1,17 @@
-.navbar {  
-   margin-bottom: 2px;
-   position: fixed;
-   width: 100%;
+.navbar {
    background-color: white;
-   opacity: 0.8;
-  
-   .nav {
-      padding-top: 5px;
-   }
-
+   margin-bottom: 0px;
+   min-height: 40px;
    .nav-pills a {
       color: black;
    }
-
    .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
       background-color: $color_5;
    }
+}
 
-   .navbar {
-      margin-top: 5px;
-      margin-bottom: 5px;
-   }
-
-   @media (min-width: 768px) {
-      .navbar-right {
-         margin-right: 0px;
-      }
-   }
+.navbar-right {
+   margin-right: -60px;
 }
 
 
