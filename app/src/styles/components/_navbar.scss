@@ -1,17 +1,28 @@
-.navbar {
-   background-color: white;
-   margin-bottom: 0px;
-   min-height: 40px;
-   .nav-pills a {
-      color: black;
-   }
-   .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
-      background-color: $color_5;
-   }
+.navbar-inverse {
+  border-radius: 0;
+  -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+  -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+  transition: background .5s ease-in-out,padding .5s ease-in-out;
+  border: none;
+
+  .navbar-nav>.active>a, .navbar-nav>.active>a:hover {
+    background-color: transparent;
+  }
+}
+.navbar-inverse .navbar-nav>li>a {
+  cursor: pointer;
 }
 
-.navbar-right {
-   margin-right: -60px;
+.navbar-inverse .navbar-nav>li>a.active {
+  color: #ffffff;
 }
 
+.navbar-transparent {
+  background-color: rgba(0,0,0,0.9);
+}
 
+.phone {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #9d9d9d;
+}

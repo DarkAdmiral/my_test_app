@@ -6,7 +6,7 @@ class Content_2 extends React.Component {
     return (
       <div id="content_2">
         <div className="overlay"></div>
-        <div className="container-fluid">
+        <div className="container">
           <div className="row">
             <div className="col-sm-7">
               <h2>Why ReactJS</h2>

@@ -2,17 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 class Content_1 extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      age: this.props.age
-    }
-  }
   render() {
-    var { name } = this.props;
     return (
       <div id="content_1">
-        <div className="container-fluid">
+        <div className="container">
           <div className="row">
             <div className="col-sm-6">
               <img className="img-responsive" src={'./resources/images/brand_003.png'}/>
@@ -25,10 +18,7 @@ class Content_1 extends React.Component {
           </div>
         </div>
       </div>
-  )
-  }
-  okButton() {
-    this.setState({ age: this.state.age + 1 });
+    )
   }
 }
 

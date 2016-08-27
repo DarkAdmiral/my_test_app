@@ -9,22 +9,34 @@ import Footer from './Footer';
 import TopBar from './TopBar';
 
 class MainFrame extends React.Component {
-  render() {
-    return (
-      <div id="mainframe">
-        <TopBar />
-        <NavBar />
-        <div className="panel panel-default">
-          <JumboTron />
-          <Content_1/>
-          <Content_2/>
-          <TwitterFeed link="https://twitter.com/reactjs"/>
-          <Footer/>
-        </div>
+    constructor(props) {
+        super(props);
+        this.state = {
+            scrollTop: 0
+        };
+    }
+    render() {
+        return (
+            <div ref="mainframe" id="mainframe">
+                <NavBar scrollTop={ this.state.scrollTop } />
+                <div ref="mainPanel" className="panel panel-default">
+                    <JumboTron />
+                    <Content_1/>
+                    <Content_2/>
+                    <TwitterFeed link="https://twitter.com/reactjs"/>
+                    <Footer/>
+                </div>
 
-      </div>
-    )
-  }
+            </div>
+        )
+    }
+    componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll.bind(this));
+    }
+    handleScroll(e) {
+        let scrollTop = document.body.scrollTop;
+        this.setState({scrollTop: scrollTop});
+    }
 }
 
 export default MainFrame;

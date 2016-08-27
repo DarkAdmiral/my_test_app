@@ -4,16 +4,10 @@ $color_3: #F1CEA2;
 $color_4: #BD8F64;
 $color_5: #5A311F;
 
-$jumbotron_height: 500px;
-
-@import 'components/footer';
+@import "../../../node_modules/font-awesome/css/font-awesome.min.css";
 @import 'components/jumbotron';
 @import 'components/navbar';
-@import 'components/topbar';
-@import 'components/content_1';
-@import 'components/content_2';
+@import 'components/content';
 @import 'components/twitter-feed';
 
-.panel-body {
-   padding: 0px;
-}
+// body { padding-top: 45px; }

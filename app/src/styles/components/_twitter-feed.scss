@@ -1,16 +1,22 @@
 #twitter-feed {
+
   .twitter-feed {
     text-align: center;
+    
     img {
       height: 250px;
       width: 250px;
     }
+
     #tweets {
-      margin: 50px;
-      height: 500px;
+      margin: 200px;
+      height: 600px;
       overflow-y: scroll;
-      margin-left: 20px;
-      margin-right: 20px;
+    }
+    @media (max-width: 768px) {
+      #tweets {
+        margin: 50px;
+      }
     }
   }
 }

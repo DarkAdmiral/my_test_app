@@ -1,42 +1,47 @@
 @media (max-width: 325px) {
-   .jumbotron {
-      height: 300px;
-      .btn-primary {
-         width: 90%;
-         margin: 5px;
-      }
-   }
+
+  .jumbotron {
+    height: 300px;
+
+    .btn-primary {
+      width: 90%;
+      margin: 5px;
+    }
+
+  }
 }
 
 @media (min-width: 500px) {
-   .jumbotron {
-      height: 500px;
-   }
+
+  .jumbotron {
+    height: 500px;
+  }
+
 }
 
 .jumbotron {
-   background-image: url('../../resources/images/jumbo_001.jpg');
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-position: center center;
-   padding-left: 10px;
-   color: white;
-   // height: $jumbotron_height;
-   text-align: center;
+  padding-top: 100px;
+  background-image: url('../../resources/images/jumbo_001.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-left: 10px;
+  color: white;
+  text-align: center;
 
-   .btn-primary {
+  .btn-primary {
+    background: transparent;
+    border-color: $color_3;
+    letter-spacing: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px 15px;
+    &:active {
       background: transparent;
-      border-color: $color_3;
-      letter-spacing: 2px;
-      margin-left: 10px;
-      margin-right: 10px;
-      padding: 10px 15px;
-      &:active {
-         background: transparent;
-         border-color: $color_4;
-      }
-      &:hover {
-         color: $color_3;
-      }
-   }
+      border-color: $color_4;
+    }
+    &:hover {
+      color: $color_3;
+    }
+  }
 }

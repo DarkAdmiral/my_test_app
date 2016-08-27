@@ -5,8 +5,8 @@ class Jumbotron extends React.Component {
   render() {
     return (
       <div className="jumbotron">
-        <h1>feuersturm.eu</h1>
-        <p>start your business now</p>
+        <h1>React Landing Page</h1>
+        <p>... your page powered by ReactJS and Bootstrap</p>
         <div class="container">
           <p>
             <a className="btn btn-primary btn-lg" href="#" role="button">Learn more</a>

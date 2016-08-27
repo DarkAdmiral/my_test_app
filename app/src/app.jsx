@@ -4,5 +4,5 @@ import MainFrame from './components/MainFrame';
 
 require('./styles/main.scss');
 
-ReactDOM.render(<MainFrame name="Jan" age={27}/>,
+ReactDOM.render(<MainFrame />,
    document.getElementById('app'));

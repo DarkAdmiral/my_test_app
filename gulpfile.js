@@ -1,11 +1,38 @@
 // get the dependencies
-var gulp = require('gulp'),
-gutil = require("gulp-util"),
-webpack = require("webpack"),
-WebpackDevServer = require("webpack-dev-server"),
-webpackConfig = require("./webpack.config.js");
+var gulp = require('gulp');
+var gutil = require("gulp-util");
+var webpack = require("webpack");
+var WebpackDevServer = require("webpack-dev-server");
+var webpackConfig = require("./webpack.config.js");
 
-gulp.task("run", ["webpack-dev-server"]);
+gulp.task("build", ["webpack-build"]);
+gulp.task("webpack-build", function(callback){
+  // modify some webpack config options
+  var myConfig = Object.create(webpackConfig);
+
+  myConfig.plugins = [
+    new webpack.DefinePlugin({
+      "process.env": {
+        // This has effect on the react lib size
+        "NODE_ENV": JSON.stringify("production")
+      }
+    }),
+    new webpack.optimize.DedupePlugin(),
+    new webpack.optimize.UglifyJsPlugin()
+  ];
+
+  // run webpack
+  webpack(myConfig, function(err, stats) {
+    if(err) throw new gutil.PluginError("webpack:build", err);
+    gutil.log("[webpack:build]", stats.toString({
+      colors: true
+    }));
+    callback();
+  });
+});
+
+
+gulp.task("dev", ["webpack-dev-server"]);
 gulp.task("webpack-dev-server", function(callback) {
   // modify some webpack config options
   var myConfig = Object.create(webpackConfig);
